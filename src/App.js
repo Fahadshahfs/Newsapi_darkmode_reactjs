@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Routes, Route } from "react-router-dom";
-
-import "./App.css";
 import MainNews from "./components/MainNews";
 import Navbar from "./components/Navbar";
 
