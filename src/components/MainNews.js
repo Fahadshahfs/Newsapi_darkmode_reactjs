@@ -29,10 +29,9 @@ const MainNews = (props) => {
             Latest News From {props.setSource}
           </h1>
           {news.map((element) => (
-            <div className="col-md-4">
+            <div className="col-md-4" key={element.url}>
               <Newslist
                 newsUrl={element.url}
-                key={element.url}
                 description={element.description.slice(0, 80)}
                 imgUrl={element.urlToImage}
                 title={element.title.slice(0, 40)}
